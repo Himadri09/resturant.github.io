@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+<style>
+
+.header{
+    z-index: 1;
+    padding-left: 2svi;
+    height: 5svi;
+   padding-bottom: 5px;
+    display: flex;
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(25, 21, 5);
+    font-family:Berkshire Swash ;
+    color:rgb(227, 207, 188) ;
+    align-items: center;
+    
+   } 
+
+.sling{
+    font-size: 4svi;
+    padding-left: 2svi;
+}
+
+.watch-video{
+    text-decoration: none;
+   font-size: 1svi;
+   margin-top: 2svi;
+   margin-bottom: 1svi;
+   font-family:Arial, sans-serif;
+   margin-left: 48svi;
+}
+
+.video-link{
+    text-decoration: none;
+    color:rgb(227, 207, 188) ;
+}
+
+.instagram{
+    margin-left: 4svi;
+   font-size: 1svi;
+   margin-top: 2svi;
+   margin-bottom: 1svi;
+   font-family:Arial, sans-serif;
+}
+
+.instagram-link{
+    text-decoration: none;
+    color:rgb(227, 207, 188) ;
+}
+
+
+.contact{
+    text-decoration: none;
+   font-size: 1svi;
+   margin-top: 2svi;
+   margin-bottom: 1svi;
+   font-family:Arial, sans-serif;
+   margin-left: 4svi;
+}
+
+.mail{
+    text-decoration: none;
+    color:rgb(227, 207, 188) ;
+}
+
+.call-us{
+    text-decoration: none;
+   font-size: 1svi;
+   margin-top: 2svi;
+   margin-bottom: 1svi;
+   font-family:Arial, sans-serif;
+   margin-left: 4svi;
+}
+
+.call{
+    text-decoration: none;
+    color:rgb(227, 207, 188) ;
+}
+
+.background{
+    position: relative;
+}
+
+.background-image{
+   width: 100%; 
+   height: 100%;
+   object-fit: cover;
+   opacity: 0.8;
+   padding: 0;
+   margin: 3svi 0 0 0;
+}
+
+.plate-and-text{
+    display: flex;
+    position: absolute;
+    top: 18svi;
+    left: 14svi;
+    justify-content: center;
+    
+}
+
+.plate{
+    padding-top: 1svi;
+    height: 24svi;
+    width: 24svi;
+    border-radius: 12svi;
+    object-fit: cover;
+
+}
+.content{
+    font-family: Roboto Slab;
+    padding-left: 3svi;
+    padding-top: 2svi;
+}
+
+.restaurant-name{
+    font-family:'Pacifico';
+    font-weight: 400;
+    font-size: 5svi;
+}
+
+.tasty{
+    font-weight: 800;
+    font-size: 3svi;
+}
+
+.destination{
+    font-size:2svi;
+    padding-top: 1svi;
+}
+
+.order-button{
+    background-color: rgb(15, 9, 9);
+    color:rgb(227, 207, 188) ;
+    margin-top: 2svi;
+    font-size: 2svi;
+    border-style: inset;
+    border-radius: 4px;
+    border: none;
+    padding: 1svi 1svi 1svi 1svi;
+}
+
+.order-button:hover{
+    box-shadow: 3px 4px 2px rgb(25, 21, 5,0.4) ;
+    cursor: pointer;
+}
+
+.order-button:active{
+    background-color:rgb(227, 207, 188) ;
+    color:rgb(15, 9, 9) ;
+    border-color: rgb(15, 9, 9);
+    cursor: pointer;
+}
+ 
+.restaurant-look{
+    position:  relative;
+}
+
+.restaurant-image{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.table-book{
+    position: absolute;
+    color:white;
+    opacity:0.9;
+    top:65svi;
+    left: 10svi;
+    font-size: 4svi;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+
+.menu-heading{
+    display: flex;
+    font-size: 4svi;
+    font-family: nunito;
+    font-weight: 500;
+    background-color: rgb(23, 15, 15);
+    color: rgb(255, 242, 227);
+    padding-top: 1svi;
+    padding-bottom: 1svi;
+}
+
+.view-cart-button{
+    background-color:rgb(227, 207, 188) ;
+    color:rgb(15, 9, 9) ;
+    border-color: rgb(15, 9, 9);
+    font-size: 2svi;
+    border-style: inset;
+    border-radius: 4px;
+    border: none;
+    padding: 1svi 1svi 1svi 1svi;
+    font-family:arial;
+    display: flex;
+    margin-left: 70svi;
+    margin-top: 1svi;
+}
+
+.menu-container{
+    display:grid;
+    padding-left: 2svi;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-right: 2svi;
+    background-color: rgb(249, 239, 225);
+    padding-top: 2svi;
+    column-gap: 0svi;
+    row-gap: 3svi;
+}
+
+.menu-food{
+   border-style: solid;
+   border-color: rgb(15, 9, 9);
+   margin-left: 2svi;
+    margin-right: 2svi;
+    border-radius: 2svi;
+    padding:2px;
+}
+
+.food-photo{
+    display: flex;
+    justify-content: center;
+}
+
+.dish-pic{
+    height:16svi;
+    width:16svi;
+    border-radius: 2svi;
+    object-fit: cover;
+    
+}
+
+.dish-description{
+    font-size: 2svi;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.add-button{
+    font-size: 2svi;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    text-align: center;
+    background-color:rgb(227, 207, 188) ;
+    color:rgb(15, 9, 9) ;
+    border-color: rgb(15, 9, 9);
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+.add-button:hover{
+    box-shadow: 1px 1px 1px gray;
+    
+}
+
+.add-button:active{
+    box-shadow: 1px 1px 1px gray;
+    opacity: 0.7;
+}
+
+.more{
+    display: flex;
+    justify-content: center;
+    padding-top: 3svi;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3svi;
+    color:rgb(15, 9, 9);
+    background-color: antiquewhite;
+    padding-bottom: 2svi; 
+}
+
+.testimonial{
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    padding-top: 2svi;
+    font-size: 4svi;
+    font-family: nunito;
+    font-weight: 500;
+    background-color: rgb(15, 9, 9);
+    padding-bottom: 1svi;
+    text-decoration:underline;
+    margin-top: 2svi;
+}
+
+ .all-reviews{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 2svi;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2svi;
+ }
+
+ .review{
+  border-radius: 2svi;
+   background-color: antiquewhite;
+   padding: 2svi;
+   margin-left: 2svi;
+   margin-right: 2svi;
+ }
+
+ .name{
+    font-weight: 550;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .identity{
+    padding-bottom: 2svi;
+    display: flex;
+    justify-content: center;
+ } 
+
+ .coma{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1svi;
+ }
+
+.coma-image{
+    height: 5svi;
+    width: 5svi;
+}
+
+.location-page{
+    background-color: antiquewhite;
+    margin:1svi;
+    margin-top: 2svi;
+    border-radius: 4px;
+    padding: 2svi;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2svi;
+    color: rgb(15, 9, 9);
+}
+
+.location-heading{
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding-top: 1svi;
+  padding-bottom: 1svi;
+  font-size: 3svi;
+}
+
+.direction-link{
+    color: rgb(227, 207, 188);
+    text-decoration: none;
+}
+
+.direction-button{
+    background-color: rgb(15, 9, 9);
+    color:rgb(227, 207, 188) ;
+    margin-top: 2svi;
+    font-size: 2svi;
+    border-style: inset;
+    border-radius: 4px;
+    border: none;
+    padding: 1svi 1svi 1svi 1svi;
+}
+
+.direction-button:hover{
+    box-shadow: 3px 4px 2px rgb(25, 21, 5,0.4) ;
+    cursor: pointer;
+}
+
+.direction-button:active{
+    background-color:rgb(227, 207, 188) ;
+    color:rgb(15, 9, 9) ;
+    border-color: rgb(15, 9, 9);
+    cursor: pointer;
+}
+
+.bar{
+    background-color:antiquewhite;
+}
+
+.leave{
+    color:rgb(15, 9, 9) ;
+    margin: 1svi;
+    margin-top: 2svi;
+}
+
+.leave-message{
+    font-family: nunito; 
+    font-size: 3svi;
+}
+
+.reach-out{
+    font-family: nunito;
+    font-size: 2svi;
+}
+
+.input {
+  overflow: hidden;
+  background-color:antiquewhite;
+  display: flex;
+  
+}
+
+.input input[type=text] {
+  padding: 1svi;
+  border: none;
+  margin-top: 1svi;
+  margin-right: 1svi;
+  margin-left: 1svi;
+  font-size: 2svi;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+   .input input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 2svi;
+  }
+  .input input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+.submit-button{
+    background-color: rgb(15, 9, 9);
+    color:rgb(227, 207, 188) ;
+    margin-top: 2svi;
+    font-size: 2svi;
+    border-style: inset;
+    border-radius: 4px;
+    border: none;
+    padding: 1svi 1svi 1svi 1svi;
+}
+
+.submit-button:hover{
+    box-shadow: 3px 4px 2px rgb(25, 21, 5,0.4) ;
+    cursor: pointer;
+}
+
+.submit-button:active{
+    background-color:rgb(227, 207, 188) ;
+    color:rgb(15, 9, 9) ;
+    border-color: rgb(15, 9, 9);
+    cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+    <div class="header">
+   <div class="sling">SLING</div> 
+
+   <div class="watch-video">
+    <a class="video-link" href="https://youtu.be/GlrxcuEDyF8">Watch video</a>
+   </div>
+
+  <div class="instagram">
+    <a class="instagram-link" href="https://www.instagram.com/himadri_labana/?igshid=ZDdkNTZiNTM%3D">Instagram</a>
+  </div>
+
+  <div class="contact">
+    <a class="mail"  href="mailto:himadri_l@ch.iitr.ac.in">Mail us</a>
+  </div>
+
+  <div class="call-us">
+    <a class="call"  href="tel:+91-1234567890">Call us</a>
+  </div>
+
+    </div>
+
+    <div>
+<div class="background">
+<img   class="background-image" src="images/peach.avif">
+</div>
+
+<div class="plate-and-text">
+  <div>
+    <img class="plate" src="images/plate.jpg">
+</div>  
+  <div class="content">
+    <div class="restaurant-name">Sling family restaurant</div>
+    <div class="tasty">
+    Fast, Tasty and Served well
+    </div>
+     <div class="destination">
+     One stop destination for all kind of food!
+     </div>
+     <div>
+        <button class="order-button">Order now</button>
+     </div>
+
+  </div>
+
+ </div>
+    </div>
+
+    <div>
+       <div class="restaurant-look">
+        <img class="restaurant-image"  src="images/restaurant image.png">
+       </div>
+       
+       <div class="table-book">
+        Book your table now!
+       </div>
+
+    </div>
+
+    <div class="menu-page">
+      <div class="menu-heading">
+        <div>
+          Menu
+         </div>
+         <div class="view-cart">
+           <button class="view-cart-button">View Cart</button>
+         </div>
+      </div>
+
+      <div class="menu-container">
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/pasta.avif">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Pasta
+            </div>
+            <div class="dish-price">
+             Rs.150
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/paneer tikka.webp">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Paneer  Tikka
+            </div>
+            <div class="dish-price">
+             Rs.230
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/veg-biryani.webp">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Veg Biryani
+            </div>
+            <div class="dish-price">
+             Rs.250
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/malai-kofta.jpg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Malai Kofta
+            </div>
+            <div class="dish-price">
+             Rs.240
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/cheese pizza.jpeg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Cheese Pizza
+            </div>
+            <div class="dish-price">
+             Rs.130
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/corn pizza.webp">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+            Corn Pizza
+            </div>
+            <div class="dish-price">
+             Rs.130
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/dal makhani.jpg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Dal Makhani
+            </div>
+            <div class="dish-price">
+             Rs.120
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/butter naan.webp">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Butter Naan
+            </div>
+            <div class="dish-price">
+             Rs.16/piece
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/matar panner.cms">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Matar Paneer
+            </div>
+            <div class="dish-price">
+             Rs.140
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/momos.webp">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+            Veg Steamed Momos
+            </div>
+            <div class="dish-price">
+             Rs.100
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/idli.webp">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Idli
+            </div>
+            <div class="dish-price">
+             Rs.120
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/dal-bati.jpg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Dal-Bati(2piece)
+            </div>
+            <div class="dish-price">
+             Rs.150
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/dosa.jpg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Dosa
+            </div>
+            <div class="dish-price">
+             Rs.130
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/burger.jpeg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Burger
+            </div>
+            <div class="dish-price">
+             Rs.100
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/biryani2.webp">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Chicken Biryani
+            </div>
+            <div class="dish-price">
+             Rs.150
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/chicken curry.jpeg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Chicken Curry
+            </div>
+            <div class="dish-price">
+             Rs.180
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/fried chicken.jpeg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Fried Chicken
+            </div>
+            <div class="dish-price">
+             Rs.150
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/fish fry.jpeg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Fish Fry
+            </div>
+            <div class="dish-price">
+             Rs.280
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/tanduri chicken.jpeg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Tandoori Chicken
+            </div>
+            <div class="dish-price">
+             Rs.190
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+       <div class="menu-food">
+        <div class="food-photo">
+       <img class="dish-pic" src="images/fish curry.jpeg">
+        </div>
+        <div class="dish-description">
+            <div class="dish-name">
+             Fish Curry
+            </div>
+            <div class="dish-price">
+             Rs.300
+            </div>
+            <div>
+                <button  class="add-button">Add</button>
+            </div>
+        </div>
+       </div>
+
+      </div>
+
+      <div class="more">And many more...</div>
+
+    </div>
+
+    <div class="testimonial-page">
+     <div class="testimonial">
+        Testimonial
+     </div>
+     
+      <div class="all-reviews">
+
+         <div class="review">
+
+           <div class="name">
+           Jaswant Arora 
+           </div>
+
+           <div class="identity">
+           (Food consultant) Solution Carts
+           </div>
+
+           <div class="coma">
+           <img class="coma-image" src="images/coma image.png">
+           </div>
+
+           <div class="review-lines">
+            The product trail was great, North Indian and South Indian both sku are great  .Thanks  for the demo
+           </div>
+
+         </div>
+
+         <div class="review">
+
+            <div class="name">
+            Asish Massy
+            </div>
+ 
+            <div class="identity">
+            Head Chef - West Bridge Hospitality LLP
+            </div>
+ 
+            <div class="coma">
+            <img class="coma-image" src="images/coma image.png">
+            </div>
+ 
+            <div class="review-lines">
+             It's an absolute pleasure working with Sling food. their service is on point and our customers absolutely love their products!
+            </div>
+ 
+          </div>
+
+          <div class="review">
+
+            <div class="name">
+            Mr. Vivan
+            </div>
+ 
+            <div class="identity">
+            
+            </div>
+ 
+            <div class="coma">
+            <img class="coma-image" src="images/coma image.png">
+            </div>
+ 
+            <div class="review-lines">
+             We have tried sling products both in our restaurant and Qsr. I can say they provide you a solution to both quality and cost for you for your products. the best part is the consistency that all their products they deliver
+            </div>
+ 
+          </div> 
+
+      </div>  
+
+    </div>
+
+    <div class="location-page">
+     
+        <div class="location-heading">
+          Restaurant location
+        </div>
+
+        <div class="address"> 
+          Address-1st Floor, Veer Enclave, Near Tulsidham Crossing, Manjalpur, , Vadodara, Gujarat, India
+        </div>
+
+        <div class="timing">
+          Everyday : 11am to 3pm & 7pm to 11pm
+        </div>
+
+        <div class="direction">
+        <button class="direction-button">
+          <a target="_blank" class="direction-link" href="https://goo.gl/maps/nr7ueoGFgZ7kzM8t5">Get Directions</a>
+        </button>
+        </div>
+
+    </div>
+
+    <div class="bar">
+
+      <div class="leave">
+        <div class="leave-message">
+            LEAVE US A MESSAGE
+        </div>
+
+        <div class="reach-out">
+            And we will reach out to you at the earliest
+        </div>
+
+        <div class="input">
+            <input type="text" placeholder="Your Name">
+          </div> 
+        
+          <div class="input">
+            <input type="text" placeholder="Phone Number">
+          </div> 
+          
+          <div class="input">
+            <input type="text" placeholder="Email  Address">
+          </div> 
+           
+          <div>
+            <button class="submit-button">
+                SUBMIT
+            </button>
+          </div>
+
+      </div>
+
+    </div>
+
+
+</body>
+
+</html>
